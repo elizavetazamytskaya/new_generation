@@ -1,56 +1,27 @@
 @mixin primary-button {
-    background: #FFC300;
-    border-radius: 24px;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'SourceSansPro Bold';
-    border: none;
+    background: #0BBC63;
+    border-radius: 100px;
+    font-family: 'Neucha Regular';
+    font-size: 18px;
+    line-height: 150%;
+    color: $secondary-text-color;
+    &:hover {
+        background: #12C96D;
+    }
 }
-@mixin secondary-button {
-    background: #C86DD7;
-    border-radius: 24px;
-    border: none;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'SourceSansPro Bold';
-}
-@mixin tertiary-button {
-    border: 1px solid #C86DD7;
-    border-radius: 24px;
-    background: none;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #C86DD7;
-    font-family: 'SourceSansPro Bold';
-}
+
 @mixin primary-header {
-    font-size: 72px;
-    line-height: 72px;
-    color: #FFFFFF;
-    font-family: 'Poppins Bold';
+    font-family: 'Neucha Regular';
+    font-size: 64px;
+    line-height: 70px;
+    color: $primary-text-color;
 }
-@mixin secondary-header {
-    font-size: 56px;
-    line-height: 64px;
-    color: #333333;
-    font-family: 'Poppins Bold';
-}
+
 @mixin primary-text {
-    font-family: 'SourceSansPro SemiBold';
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
-    color: #333333;
-}
-@mixin secondary-text {
-    font-size: 16px;
-    line-height: 24px;
-    color: #333333;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    font-family: 'SourceSansPro Regular';
+    line-height: 150%;
+    color: $primary-text-color;
 }
