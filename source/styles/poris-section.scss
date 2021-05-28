@@ -1,0 +1,125 @@
+.poris {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    padding: 144px 0 112px;
+    &-img {
+        width: 40%;
+        background: $gradient;
+        border-radius: 3px;
+        img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            bottom: 30px;
+            left: 30px;
+        }
+    }
+    &-content {
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        &-header {
+            @include secondary-header;
+            margin: 0 0 23px;
+        }
+        &-descr__bold {
+            @include primary-text;
+            margin: 0 0 15px;
+        }
+        &-descr__regular {
+            @include secondary-text;
+            margin: 0 0;
+        }
+        &-data {
+            display: flex;
+            justify-content: space-between;
+            margin: 38px 0 16px;
+            input {
+                padding: 12px 0 12px 16px;
+                border: 1px solid #DADADA;
+                border-radius: 3px;
+                width: 60%;
+                &::placeholder {
+                    @include secondary-text;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                @include secondary-button;
+                padding: 12px 47px;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+        &-addition {
+            font-size: 12px;
+            line-height: 24px;
+            color: #333333;
+            font-family: 'SourceSansPro SemiBold';
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .poris {
+        &-img {
+            width: 70%;
+            margin: auto auto;
+        }
+        &-content {
+            margin-left: 90px;
+            &-data {
+                flex-direction: column;
+                button {
+                    width: 170px;
+                    height: 48px;
+                    margin-top: 16px;
+                }
+                input {
+                    width: 345px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .poris {
+        padding: 82px 0 40px;
+        &-content {
+            width: 50%;
+            &-header {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .poris {
+        .container {
+            flex-direction: column;
+        }
+        &-content {
+            width: 100%;
+            margin-top: 40px;
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .poris {
+        &-img {
+            width: 95%;
+            img {
+                bottom: 18px;
+                left: 18px;
+            }
+        }
+    }
+}

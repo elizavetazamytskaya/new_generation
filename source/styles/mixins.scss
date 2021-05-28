@@ -1,0 +1,56 @@
+@mixin primary-button {
+    background: #FFC300;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'SourceSansPro Bold';
+    border: none;
+}
+@mixin secondary-button {
+    background: #C86DD7;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'SourceSansPro Bold';
+}
+@mixin tertiary-button {
+    border: 1px solid #C86DD7;
+    border-radius: 24px;
+    background: none;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #C86DD7;
+    font-family: 'SourceSansPro Bold';
+}
+@mixin primary-header {
+    font-size: 72px;
+    line-height: 72px;
+    color: #FFFFFF;
+    font-family: 'Poppins Bold';
+}
+@mixin secondary-header {
+    font-size: 56px;
+    line-height: 64px;
+    color: #333333;
+    font-family: 'Poppins Bold';
+}
+@mixin primary-text {
+    font-family: 'SourceSansPro SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+@mixin secondary-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-family: 'SourceSansPro Regular';
+}

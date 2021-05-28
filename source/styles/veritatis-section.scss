@@ -1,0 +1,146 @@
+.veritatis {
+    padding: 63px 0 112px;
+    background: #FDF2FF;
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-header {
+            @include secondary-header;
+            margin: 0;
+        }
+        &-descr {
+            text-align: start;
+            width: 30%;
+            margin: 0;
+            @include secondary-text;
+            }
+        &-btn {
+            @include tertiary-button;
+            padding: 12px 61px;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 64px;
+        &-item {
+            padding: 0 0 75px 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 570px;
+            &-header {
+                font-size: 24px;
+                line-height: 32px;
+                color: #FFFFFF;
+                font-family: 'Poppins Bold';
+                margin: 0 0;
+                width: 60%;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 24px;
+                color: #FFFFFF;
+                font-family: 'SourceSansPro SemiBold';
+                margin-top: 11px;
+                margin-bottom: 0;
+            }
+        }
+        #veritatis-items__first-item {
+            background-image: url(../img/veritatis-first-item.png);
+            flex: 2;
+        }
+        #veritatis-items__second-item {
+            background-image: url(../img/veritatis-second-item.png);
+            flex: 1;
+            margin: 0 30px;
+        }
+        #veritatis-items__third-item {
+            background-image: url(../img/veritatis-third-item.png);
+            flex: 1;
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .veritatis {
+        &-items {
+            &-item {
+                &-header {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .veritatis {
+        &-content {
+            &-header {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+        &-items {
+            margin-top: 48px;
+            flex-direction: column;
+            align-items: center;
+            #veritatis-items__second-item{
+                margin: 16px 0;  
+            }
+            &-item {
+                width: 40%;
+                padding: 325px 0 40px 32px;
+                margin: 0;
+                background-size: cover;
+                &-header {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .veritatis {
+        &-content {
+            flex-direction: column;
+            align-items: start;
+            &-descr {
+                width: 100%;
+                margin: 24px 0 16px;
+            }
+        }
+        &-items {
+            &-item {
+                width: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .veritatis {
+        padding: 54px 0 64px;
+        &-items {
+            &-item {
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 376px) {
+    .veritatis {
+        padding: 54px 0 64px;
+        &-items {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}

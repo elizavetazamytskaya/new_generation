@@ -1,0 +1,122 @@
+.totam {
+    background: #FDF2FF;
+    padding: 55px 0 112px;
+    text-align: center;
+    &-header {
+        @include secondary-header;
+        margin: 0;
+    }
+    &-descr {
+        @include primary-text;
+        width: 45%;
+        margin: 23px auto 48px;
+    }
+    &-items {
+        display: flex;
+        justify-content: space-around;
+        &-item {
+            padding: 50px 0;
+            background: #FFFFFF;
+            box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+            border-radius: 3px;
+            width: 30%;
+            &-header {
+                font-size: 24px;
+                line-height: 32px;
+                color: #333333;
+                font-family: 'Poppins Bold';
+                margin: 0;
+            }
+            &-price {
+                font-size: 72px;
+                line-height: 72px;
+                color: #333333;
+                font-family: 'Poppins Bold';
+                margin: 7px 0 26px;
+            }
+            &-list {
+                padding: 0;
+                li {
+                    @include secondary-text;
+                    margin: 0 0 8px;
+                    list-style-type: none;
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        background-color: #333333;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        margin: 0 5px 2px;
+                    }
+                }
+            }
+            &-button {
+                @include tertiary-button;
+                padding: 12px 54px;
+                margin-top: 34px;
+            }
+            &:hover {
+                background: $gradient;
+                    .totam-items-item-header,
+                    .totam-items-item-price,
+                    .totam-items-item-list li {
+                        color: #FFFFFF;
+                    }
+                    .totam-items-item-button {
+                        @include primary-button;
+                    }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .totam {
+        &-descr {
+            width: 70%;
+            margin: 23px auto 30px;
+        }
+        &-items {
+            flex-direction: column;
+            align-items: center;
+            &-item {
+                width: 50%;
+                margin-top: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .totam {
+        &-header {
+            font-size: 40px;
+            line-height: 48px;
+        }
+        &-descr {
+            width: 90%;
+        }
+        &-items {
+            &-item {
+                width: 70%;
+                &-price {
+                    font-size: 72px;
+                    line-height: 72px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 376px) {
+    .totam {
+        padding: 54px 0 80px;
+        &-descr {
+            width: 100%;
+            margin: 23px auto 18px;
+        }
+        &-items {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
